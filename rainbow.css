@@ -1,0 +1,74 @@
+*{
+    box-sizing:border-box;
+  }
+  body{
+    /* border: 1px solid black; */
+    background: white;/*自动填充背景色*/
+    padding: 50px;
+  }
+  .rainbow{
+    height: 200px; /*取一半高度，方便隐藏溢出的一半彩虹*/
+   /*  border: 1px solid black; */
+    overflow: hidden;/*隐藏溢出部分*/
+  }
+  .rainbow div{
+    overflow: hidden;/*取消margin合并*/
+  }
+  .rainbow>div{
+    /* border: 1px solid rgb(255,0,0); */
+    width: 400px;
+    height: 400px;
+    background: rgb(255,0,0);
+    border-radius: 50%; /*使正方形变为圆形*/
+  }
+  .rainbow>div>div{
+    /* border: 1px solid rgb(255,122,0); */
+    background: rgb(255,122,0);
+    /*依次加外边距，缩小高度*/
+    height: 380px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .rainbow>div>div>div{
+    /* border: 1px solid rgb(255,255,0); */
+    background: rgb(255,255,0);
+    height: 360px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .rainbow>div>div>div>div{
+    border: 1px solid/*   */rgb(0,255,0);
+    background: rgb(0,255,0);
+    height: 340px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .rainbow>div>div>div>div>div{
+    /* border: 1px solid rgb(0,255,255); */
+    background: rgb(0,255,255);
+    height: 320px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .rainbow>div>div>div>div>div>div{
+    /* border: 1px solid rgb(0,0,255); */
+    background: rgb(0,0,255);
+    height: 300px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .rainbow>div>div>div>div>div>div>div{
+    /* border: 1px solid rgb(255,0,255); */
+    background: rgb(255,0,255);
+    height: 280px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  /*消除最里面的块级颜色，时使其为白色*/
+  .rainbow>div>div>div>div>div>div>div>div{
+    border: 1px solid rg/* b */(255,255,255);
+    background: rgb(255,255,255);
+    height: 260px;
+    margin: 10px;
+    border-radius: 50%;
+  }
